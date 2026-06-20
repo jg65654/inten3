@@ -1,0 +1,272 @@
+*{
+box-sizing:border-box;
+}
+body{
+font-size:20px;
+font-family: arial New roman;
+line-height: 1.6em; 
+}
+
+.contenedor{
+    width: 990px;
+    margin: 0 auto;
+}
+
+.encabezado{ 
+background: #002E17; 
+overflow: hidden;
+}
+.logo{
+    float: left;
+   position: relative;
+    top: 20px; 
+}
+.encabezado nav{ 
+float: right; 
+}
+.encabezado nav ul{ 
+margin: 2;
+padding: 2;
+list-style: none;
+}
+.encabezado nav ul li{ 
+display: inline-block;
+/*background: red;*/
+margin-right: -5px;
+}
+.encabezado nav ul li a{ 
+display: block;
+color: #fff;
+padding: 32px;
+border-left: 3px solid #1C294F;
+text-decoration: none;
+}
+/*cambio de color*/
+.encabezado nav ul li a:hover{ 
+background: #2B1C4F;
+}
+/*------------------------------------
+PRESENTACION
+-------------------------------------*/ 
+.presentacion{
+  /*background: yellow;*/
+  background: radial-gradient(190px at 28% 15%, #2B1C4F, #400C3C);
+  overflow: hidden;
+  border-bottom: 2px solid #75002B; 
+}  
+.introduccion-presentacion{
+    float: left;
+}
+.introduccion-presentacion h1{
+    color: #fff;
+    font-size: 2.625em;  /*16px  1em  42px  ?*/
+    text-shadow: 3px 3px 2px #75002B;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 48px;
+    margin-left: 25px;
+   line-height: 0.8em; /*interlineado  */
+} 
+.introduccion-presentacion h1 span{
+    color: #FF529A;
+    font-size: 0.38em; /*42px = 2.62em 16px = ? =0.38*/
+}
+/*------------aprender------------mas*/
+a.aprender-mas{
+    font-size: 2.1875em;
+    border: 1px solid #0d5c25;
+    padding: 30px 50px;
+    /*background: yellow;*/
+    display: block;
+    text-align: center;
+    margin: 10px 40px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 3px 7px 0 #000;
+    border-radius: 10px;
+    background: linear-gradient(to top, #A572DF, #5272FE);
+    box-shadow: 0 8px 0 0 #FF529A,
+                0 0 25px 5px #ffff;
+} 
+a.aprender-mas:hover{
+    box-shadow: 0 0 25px 5px #0000;
+}
+.presentacion img{
+    float: right;
+    position: relative;
+    top: 30px;
+}
+/*****************************************************************
+/*------------Acceso-rapido------------*/
+.acceso-rapido{
+    background: #75FF8C;
+    overflow: hidden;
+    border-bottom: 4px solid #fff;
+}
+.acceso-rapido h2 {
+    color: #fff;
+    font-size: 2.87em;
+    text-shadow: 2px 2px 0 #000;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 18px;
+}
+.acceso-rapido figure{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 0 -3px 0 0;
+    padding: 0px;
+}
+.acceso-rapido h3{
+   font-size: 1.1875em;
+    margin-top: 9px;
+    margin-bottom: 20px; 
+}
+.acceso-rapido h3 a{
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    font-weight: normal;
+}
+.acceso-rapido h3 a:hover{
+    text-decoration: none;
+}
+/*---------bloque contenido----------*/
+.bloque-contenido{
+    overflow: hidden; /*2
+    margin-top: 25px; /** complemenatario 6  **/
+}
+.bloque-contenido .contenedor{  /*3**/
+    display: table;  */
+}
+.articulos { /** 1 **/
+    /*float: left;  /*elim 3 */
+    background: beige;
+    width: 75%; /*elimi  3*/
+  display: table-cell;  /*3*/
+  padding-right: 35px; /* 4*/
+}
+.articulos article{  /* 10   */
+    margin-bottom: 15px;
+}
+.articulos h2{  /**4**/
+    color: #444444;
+    font-size: 1.625em;
+    border-bottom: 4px solid #ADB4C7;
+    padding-bottom: 25px;
+
+}
+.articulos img{  /**5**/
+    float: left;
+    margin-right: 15px;
+    position: relative; /*  10  */
+    top: 7px;           /*   10 */
+}
+.articulos article h1{  /**6**/
+    font-size: 1.25em;  /*20/16 = 1.25em*/
+    /*margin: 0; ** 8  *** quitar 8 poner 9*/
+    margin: 5px 0 5px 0;  /*** 9 ****/
+}
+.articulos article h1 a{  /**7**/ 
+    color: #E01445;  /*HTML incluir href*/
+    text-decoration: none;
+
+}
+.articulos article h1 a:hover{  /**8**/ 
+    text-decoration: underline;
+}
+.articulos article p{  /** 9 **/ 
+    margin: 2;
+    text-align: justify;
+    font-size: 0.875em; /*** 14/16 = 0.875 ***/
+}
+.complementario{    /*   1  */
+    background: #0460ad;
+    width: 35%; 
+    display: table-cell; 
+    padding: 0 20px 20 px; /***2**laterales sup e inf*/
+}
+.complementario h2{   /** 2  **/
+    font-size: 1.625em;  /* 26/16 em*/ 
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+.complementario ul{   /** 3  **/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.complementario ul li{ /*** 4 ***/
+    background: url("imagen/bote.jpg") no-repeat left center;
+    padding-left: 24px;
+    margin-bottom: 8px;
+}
+.complementario ul li a{ /*** 5 ***/
+    color: #826490;
+    text-decoration: none;
+
+}
+.complementario ul li a:hover{ /*** 6 ***/
+    color: red;
+    text-decoration: underline; /* ir a bloque-conteniodo*/
+}
+.piedepagina{   /**1 **/
+    background: #444444;
+    padding: 20px 0; /*** 7  c  */
+
+}
+/***********pie de pagina**************/
+.piedepagina{   /**1 **/
+    background: #444444;
+    padding: 20px 0; /*** 7  c  */
+}
+.piedepagina .contenedor{   /**2  **/
+    display: table;
+}
+.piedepagina small{  /***3  ***/
+    display: table-cell;
+    background: red;  /*  elim  7 a **/
+    color: #fff;  /** 4 **/
+}
+.piedepagina nav{ /**** 4  ***/
+    display: table-cell;
+    background: black;  /*** elim 7 b ***/
+    text-align: right; /***6  **/
+}
+.piedepagina nav ul{ /**** 5 ***/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.piedepagina nav ul li{ /**** 6 ***/
+    display: inline-block;
+    padding-left: 10px;  /** 7  d ****/
+}
+.piedepagina nav ul li a{ /**** 7 ***/
+    color: #fff;
+    text-decoration: none;
+}
+.piedepagina nav ul li a:hover{ /**** 7 ***/
+    color: #ffff00;
+    text-decoration: underline;
+}
+/*************Redes sociales***************/
+.social{
+    position: fixed;
+    top: 10%;
+    right: 0;
+}
+.social a{
+    display: block;
+    margin-bottom: 2px;
+    opacity: 0.4;
+}
+.social a:hover{
+    opacity: 0.8;
+}
+.social img{
+    border-radius: 20%;
+    display: block;
+
+}
